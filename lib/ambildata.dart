@@ -4,7 +4,7 @@ import 'dart:convert';
 
 class AmbilData extends StatelessWidget {
   //final String apiUrl = "https://reqres.in/api/users?per_page=15";
-  final String apiUrl = "http://172.20.128.222/toko-api/public/produk";
+  final String apiUrl = "http://192.168.1.9/toko-api/public/produk";
   Future<List<dynamic>> _inidatauser() async {
     var result = await http.get(Uri.parse(apiUrl));
     return json.decode(result.body)['data'];
